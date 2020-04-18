@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components - Ejemplo</title>
+    <link rel="shortcut icon" href="./images/logo-192x192.png" type="image/x-icon">
+    <style>
+        *,
+        html {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            min-height: 100%;
+        }
+
+        header {
+            display: flex;
+            height: 90px;
+            background-color: #fff159;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .logo {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .product-list {
+            display: flex;
+            background: #f5f5f5;
+            min-height: calc(100vh - 90px);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo-192x192.png" alt="logo" class='logo'>
+        <h2>Web Components - Products List</h2>
+    </header>
+    <div class="product-list">
+        <product-card imagen='./images/smart.webp'>
+            <div slot="precio">$10.000</div>
+            <div slot="nombre">Smart Tv Bgh 4k 55</div>
+        </product-card>
+        <product-card imagen='./images/celular.webp'>
+            <div slot="precio">$5.000</div>
+            <div slot="nombre">Motorola Moto E E6</div>
+        </product-card>
+    </div>
+
+    <script src="./components/productCard.js"></script>
+</body>
+
+</html>
