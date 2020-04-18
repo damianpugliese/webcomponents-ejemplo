@@ -8,8 +8,6 @@ template.innerHTML = `
             margin-right: 20px;
             font-family: 'Arial', sans-serif;
             background: #fff;
-            -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.32);
-            -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.32);
             box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.32);
             text-decoration: none;
             border-radius: 5px;
